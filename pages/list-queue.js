@@ -23,7 +23,8 @@ export default function listQueue() {
     queryFn : async() =>{
       // setInputDate(arrdate)
       // const req = await fetch(`http://localhost:3000/api/list-queue`,{
-      const req = await fetch(`http://localhost:3000/api/queue`,{
+      const req = await fetch(`http://host.docker.internal:3000/api/queue`,{
+        //const req = await fetch(`http://localhost:3000/api/queue`,{
         method: "GET",
         headers:{
           "Content-Type": "application/json",

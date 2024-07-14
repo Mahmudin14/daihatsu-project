@@ -14,7 +14,8 @@ export default function listLock() {
   },[])
 
   const submitPassword = async() => {
-    const req = await fetch(`http://localhost:3000/api/list-lock`,{
+    const req = await fetch(`http://host.docker.internal:3000/api/list-lock`,{
+      //const req = await fetch(`http://localhost:3000/api/list-lock`,{
       method: "POST",
       headers: {
         "Content-Type" : "application/json",
