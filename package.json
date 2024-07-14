@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "date-fns": "^2.30.0",
+    "immer": "^10.0.3",
+    "jspdf": "^2.5.1",
+    "mysql2": "^3.6.5",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "reactstrap": "^9.2.1",
+    "zustand": "^4.4.7"
+  },
+  "name": "daihatsu-service-queue-main",
+  "description": "This examples shows how to use Docker with Next.js based on the [deployment documentation](https://nextjs.org/docs/deployment#docker-image). Additionally, it contains instructions for deploying to Google Cloud Run. However, you can use any container-based deployment host.",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
+}
