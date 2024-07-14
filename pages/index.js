@@ -36,7 +36,7 @@ export default function Home() {
   },[resp, showModal])
 
   const addQueue = async() => {
-    const req = await fetch(`http://host.docker.internal:3000/api/queue`,{
+    const req = await fetch(`http://127.0.0.1:3000/api/queue`,{
     // const req = await fetch(`http://localhost:3000/api/queue`,{
       method: "POST",
       headers: {
