@@ -107,7 +107,7 @@ export default function listQueue() {
                                 <td>{detail_data?.telp}</td>
                                 <td>{detail_data?.plat_number}</td>
                                 <td>{detail_data?.car_type}</td>
-                                <td>{detail_data?.arrival_date?.slice(0,9) + (Number(detail_data?.arrival_date?.slice(9,10)) + 1)}</td>
+                                <td>{detail_data?.arrival_date?.slice(0,9) + (Number(detail_data?.arrival_date?.slice(9,10)))}</td>
                                 <td>{detail_data?.arrival_time}</td>
                                 <td>{detail_data?.complaint}</td>
                               </tr>
