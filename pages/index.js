@@ -102,9 +102,9 @@ export default function Home() {
     doc.setFont("Helvetica", "normal")
     doc.setFontSize(11)
     
-    doc.text( resp.queue_number.toString()  , 30 , 110)
+    doc.text( resp?.queue_number?.toString()  , 30 , 110)
     doc.text( resp.name , 30 , 150)
-    doc.text( resp.telp.toString() , 160 , 150)
+    doc.text( resp?.telp?.toString() , 160 , 150)
     doc.text( resp.plat_number , 30 ,190)
     doc.text( resp.car_type , 160 , 190 )
     doc.text( resp.arrival_date , 30 , 230 )
