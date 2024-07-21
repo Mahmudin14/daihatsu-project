@@ -116,12 +116,22 @@ export default function Home() {
     // doc.text( respQueueData.arrival_date , 30 , 190 )
     // doc.text( respQueueData.arrival_time , 160, 190 )
     // doc.text( respQueueData.complaint , 30, 230 )
-
-
-    var data = doc.output('dataurl')
-    setDatauripdf(data)
     // doc.save("Bukti_daftar_servis_daihatsu");
-    doc.autoPrint()
+
+
+    // var data = doc.output('dataurl')
+    // setDatauripdf(data)
+    // doc.autoPrint()
+    const isMobile  = () =>  {
+      return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+    }
+    if (isMobile == false){
+        var data = doc.output('dataurl')
+        setDatauripdf(data)
+    } else {
+        doc.autoPrint();
+        window.open(doc.output('bloburl'), '_blank');
+    }
   }
 
   const router = useRouter()
