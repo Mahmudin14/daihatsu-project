@@ -14,7 +14,7 @@ export default function listLock() {
   },[])
 
   const submitPassword = async() => {
-    const req = await fetch(`http://127.0.0.1:3000/api/list-lock`,{
+    const req = await fetch(`http://103.245.39.106:3000/api/list-lock`,{
       //const req = await fetch(`http://localhost:3000/api/list-lock`,{
       method: "POST",
       headers: {
