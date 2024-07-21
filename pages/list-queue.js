@@ -42,7 +42,7 @@ export default function listQueue() {
   
   console.log(arrdate)
   console.log(data)
-  console.log("Manipulasi String : " + arrdate.slice(0,9) + (arrdate.slice(9,10) - 1))
+  console.log("Manipulasi String : " + arrdate.slice(0,9) + (arrdate.slice(9,10)))
 
   return (
     <>
@@ -89,7 +89,7 @@ export default function listQueue() {
                       <tbody>
                       {data?.queries?.filter((value)=>{
                            return(
-                             value?.arrival_date?.includes(arrdate.slice(0,9) + (arrdate.slice(9,10) - 1))
+                             value?.arrival_date?.includes(arrdate.slice(0,9) + (arrdate.slice(9,10)))
                            )
                          }).map((detail_data,index) => {
                            return(
